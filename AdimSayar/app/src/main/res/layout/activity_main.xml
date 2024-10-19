@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kilonuzu Girin : (KG)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/stepCountView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepCountView"></EditText>
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Boyunuzu Girin : (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/stepCountView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepCountView"></EditText>
+
+    <TextView
+        android:id="@+id/stepCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adım Sayısı : 0"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calorieBurnedView"
+        app:layout_constraintStart_toStartOf="@+id/weightInput"></TextView>
+
+    <TextView
+        android:id="@+id/calorieBurnedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Yakılan Kalori : 0 kcal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/weightInput"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+</LinearLayout>
